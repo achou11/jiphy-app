@@ -13,5 +13,9 @@
 2. Then run the following to start the app:
 
     ```shell
+    npm start
+
+    # or
+
     yarn start
     ```
