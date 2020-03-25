@@ -1,0 +1,15 @@
+.SearchResults {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-gap: 24px;
+  width: 100%;
+  height: calc(2 * (200px + 24px));
+  justify-items: center;
+  padding: 24px 0;
+}
+
+.SearchResults.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

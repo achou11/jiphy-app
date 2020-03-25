@@ -1,0 +1,26 @@
+.Button {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 12px;
+  height: 28px;
+  width: 96px;
+}
+
+.Button:not(:disabled):hover {
+  border-color: grey;
+  color: #eee;
+  background-color: black;
+}
+
+.Button:not(:disabled):active {
+  color: #bbb;
+}
+
+.Button:disabled {
+  opacity: 0.2;
+  cursor: auto;
+}
