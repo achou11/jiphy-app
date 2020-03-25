@@ -9,6 +9,9 @@ const BASE_ENDPOINT = `https://api.giphy.com/v1/gifs/search?api_key=${process.en
 
 const getImageProperties = gifObject => {
   const { id, title } = gifObject
+
+  // Using the fixed height rendition based on the Giphy docs
+  // https://developers.giphy.com/docs/optional-settings/#rendition-guide
   const { url, width, height } = gifObject.images.fixed_height
   return { id, title, url, width, height }
 }
