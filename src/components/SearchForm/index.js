@@ -36,7 +36,7 @@ const SearchForm = ({ setIsLoading, setGifs }) => {
 
       // Remove the cached query from local storage
       // so that we refetch the next time happens,
-      // which could be useful for updating stale data.
+      // which can help to avoid using stale data.
       localStorage.removeItem(inputValue)
       return
     }
@@ -70,7 +70,7 @@ const SearchForm = ({ setIsLoading, setGifs }) => {
 
   return (
     <div className='SearchForm'>
-      <form className='SearchForm' onSubmit={search}>
+      <form onSubmit={search}>
         <label htmlFor='giphy-search'>Search Giphy: </label>
         <input
           autoFocus
